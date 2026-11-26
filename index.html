@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WebSPICE</title><link rel="stylesheet" href="./style.css"></head>
+<body><header><div class="brand">◈ WebSPICE</div><span>Browser circuit lab</span><div class="spacer"></div><button id="run">▶ Run transient</button></header>
+<main><aside><h3>Components</h3><button data-part="R">＋ Resistor</button><button data-part="C">＋ Capacitor</button><button data-part="V">＋ Voltage source</button><button data-part="GND">＋ Ground</button><hr><h3>Selected component</h3><label>Value<input id="value" value="1k"></label><button id="apply">Apply value</button><p class="hint">Tap a component to select it. Drag parts to move. This prototype simulates a simple RC circuit.</p></aside>
+<section class="work"><div class="toolbar"><b>Schematic</b><span id="status">Ready</span><button id="reset">Reset example</button></div><canvas id="schematic"></canvas><div class="plothead"><b>Transient response</b><span>V(out)</span></div><canvas id="plot"></canvas></section></main>
+<footer>WebSPICE prototype · Browser-based · Not yet LTspice-compatible</footer><script src="./app.js"></script></body></html>
